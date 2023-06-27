@@ -44,4 +44,4 @@ jobs:
          aws-secret-access-key: ${{ secrets.AWS_SECRET_KEY }}
          aws-region: us-east-1
      - name: Upload to s3
-       run: aws s3 cp ${{ githb.sha }}.zip s3://nc-bucket-2005/${{ githb.sha }}.zip
+       run: aws s3 cp ${{ github.sha }}.zip s3://nc-bucket-2005/${{ github.sha }}.zip
